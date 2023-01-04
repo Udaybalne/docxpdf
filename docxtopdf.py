@@ -6,7 +6,7 @@ Created on Wed Jan  4 19:19:19 2023
 """
 
 from tkinter import *
-from PIL import ImageTk
+ 
 import tkinter.font as font
 from tkinter import filedialog
 from docx2pdf import convert
@@ -19,10 +19,7 @@ window=Tk()
 window.title('DOCX PDF CONVERFTER')
 window.minsize(width=600,height=600)
 window.geometry("1000x400") 
-bg= ImageTk.PhotoImage(file="C:/Users/91630/Pictures/pdf-to-word-banner.png")
-canvas= Canvas(window,width=0, height=0)
-canvas.pack(expand=True, fill=BOTH)
-canvas.create_image(150,200,image=bg, anchor="nw")
+ 
 headingFrame1 = Frame(window,bg="DodgerBlue4",bd=5)
 headingFrame1.place(relx=0.2,rely=0.1,relwidth=0.6,relheight=0.16)
 headingLabel = Label(headingFrame1, text="DOCX PDF CONVERTER", bg='firebrick', fg='black', font=('Courier',30))
